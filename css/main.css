@@ -1,3 +1,7 @@
+.slick-slide {
+    transform: translate3d(0, 0, 0);
+}
+
 .inner {
     width: 1200px;
     margin: 0 auto;
@@ -47,7 +51,7 @@
 }
 
 .Header {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -161,8 +165,12 @@
 }
 
 .Section01 {
-    transform: translateY(-155px);
-    height: 745px;
+    padding: 155px 0 0 0;
+    transition: 0.5s;
+}
+
+.Section01.on {
+    padding: 0 0 0 0;
 }
 
 .Section02 {
